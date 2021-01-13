@@ -4,3 +4,6 @@ body{font-family: arial; font-size: 18px; color: #444; line-height: 25px;}
 .content{background: #f0f0f0; width: 800px; margin: auto;}
 .maincontent{background: #fff; margin: 10px; min-height: 500px; padding: 5px 10px;}
 .header, .footer{text-align: center; background: #ddd; padding: 10px;}
+.item { margin-left: 60px; margin-top: 20px;}
+
+/* .item, .header, #1stid.  it's cssSelector*/ 
