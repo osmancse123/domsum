@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM - Document Object Model</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<section class="container">
+		<div class="logo">
+			<img src="../js_images/logo.png" alt="learn with osman">
+		</div>
+		<h1 id="header" class="header">To-Do App</h1>
+
+
+		<form action="" class="new-task-container box">
+			<label for="new-task">add new Task</label>
+			<input type="text" id="new-task">
+			<input type="submit" id="addtask" value="Add Task">
+		</form><br>
+
+		<div class="todo-list box">
+			<h2>Incomplete Tasks</h2>
+			<ul id="items">
+				<li class="item">
+					<input type="checkbox"><label>Task Name</label>
+					<!-- <button class="update">Update</button> -->
+				</li>
+				<li class="item">
+					<input type="checkbox"><label>Task Name</label>
+					<!-- <button class="update">Update</button> -->
+				</li>
+				<li class="item">
+					<input type="checkbox"><label>Task Name</label>
+					<!-- <button class="update">Update</button> -->
+				</li>
+			</ul>
+		</div>
+		<!-- todo list -->
+
+		<div class="complete-list box">
+			<h2>Complete Tasks</h2>
+			<ul>
+				<li class="item">
+					<label>Task Name</label>
+					<button class="delete">Delete</button>
+				</li>
+			</ul>
+		</div>
+		<!-- complete list -->
+	</section>
+	<!-- container -->
+	<script src="project.js"></script>
+</body>
+</html> 	
