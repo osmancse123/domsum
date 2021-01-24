@@ -29,32 +29,32 @@ let createTask = function(task) {
 
 let addTask = function(event) {
     event.preventDefault();
-    let listItem = createTask(newTask.value);
-    todoUl.appendChild(listItem);
+    let a = createTask(newTask.value);
+    todoUl.appendChild(a);
     newTask.value = ""; 
     // bind the new list item to the incomplete list
-    bindInCompleteItems(listItem, completeTask);
+    bindInCompleteItems(a, completeTask);
 
 }
 
 let completeTask = function() {
-    let listItem = this.parentNode;
+    let b = this.parentNode;
     let deleteBtn = document.createElement('button');
     deleteBtn.innerText = 'Delete';
     deleteBtn.className = 'delete';
-    listItem.appendChild(deleteBtn);
+    b.appendChild(deleteBtn);
 
-    checkBox = listItem.querySelector('input[type="checkbox"]');
+    checkBox = b.querySelector('input[type="checkbox"]');
     checkBox.remove();
-    completeUl.appendChild(listItem);
+    completeUl.appendChild(b);
     // bind with complete task
-    bindCompleteItems(listItem, deleteTask);
+    bindCompleteItems(b, deleteTask);
 }
 
 let deleteTask = function() {
-    let listItem = this.parentNode;
-    let ul = listItem.parentNode;
-    ul.removeChild(listItem);
+    let listItems = this.parentNode;
+    let ul = listItems.parentNode;
+    ul.removeChild(listItems);
 }
 
 let bindInCompleteItems = function(taskItem, checkboxClick) {
@@ -69,12 +69,12 @@ let bindCompleteItems = function(taskItem, deleteClick) {
 }
 
 // call the functions
-for (i = 0; i < todoUl.children.length; i++) {
-    bindInCompleteItems(todoUl.children[i], completeTask);
-}
+// for (i = 0; i < todoUl.children.length; i++) {
+//     bindInCompleteItems(todoUl.children[i], completeTask);
+// }
 
-for (i = 0; i < completeUl.children.length; i++) {
-    bindCompleteItems(completeUl.children[i], deleteTask);
-}
+// for (i = 0; i < completeUl.children.length; i++) {
+//     bindCompleteItems(completeUl.children[i], deleteTask);
+// }
 form.addEventListener('submit', addTask);
 
