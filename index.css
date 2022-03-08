@@ -1,9 +1,9 @@
-*{margin: 0; padding: 0; outline: 0; box-sizing: border-box;}
-body {
-    font-family: arial;
-    font-size: 18px;
-    color: #444; line-height: 25px;
-}
+* {
+    margin: 0; 
+    padding: 0; 
+    outline: 0; 
+    box-sizing: border-box;}
+
 .container {
     background: #d3efdf;
     padding: 25px;
@@ -59,13 +59,15 @@ li {
     color: white;
 }
 .delete {
+    float: right;
     background-color: red;
     color: white;
-    text-shadow: none;
-    width: 50px;
-    height: 20px;
-    border: none;
+    padding: 3px 5px;
+    border: 0px;
 }
+
+
+
 
 /* .header, .footer {
     text-align: center;

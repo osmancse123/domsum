@@ -1,9 +1,9 @@
 // traversing Dom Hierarchy - play with dom:-
 
-// const parent = document.querySelector('.content');
+// const parent = document.querySelector('.container');
 // const children = parent.children;
 // console.log(children);
-// console.log(children[2]);
+// console.log(children[3]);
 
 // let grandParent = document.querySelector('.todo-list');
 // let parent = grandParent.children;

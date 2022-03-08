@@ -1,12 +1,13 @@
+
 // Analyze the dom - play with dom:-
 
 // console.dir(document)
 // console.dir(typeof(document));
 // console.log(document);
 // console.log(typeof(document));
-// console.log(document.title);
+// console.log(document.title); 
 // console.log(typeof(document.body));
-// console.log(document.head);
+// console.log(document.header);
 
 // console.log(document.images);
 
@@ -27,4 +28,8 @@
 // }
 
 // console.log(document.all[4]);
+
+// for (let val of document.all) {
+//     console.log(val);
+// }
 

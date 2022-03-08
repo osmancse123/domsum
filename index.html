@@ -5,51 +5,47 @@
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
-	<section class="content">
-		<div class="header">
-			<h2 id="head" class="head">DOM - Document Object Model</span></h2>
-		</div><br>
+	<section class="container">
+
+		<h2 id="header" class="header">DOM - Document Object Model</span></h2>
 
 		<!-- <div class="mouse" style="background-color: red; width: 200px; height: 50px; margin-left: 150px;">
 			<p>hello coder</p>
 		</div> -->
 
-		<form action="" class="new-task" style="margin-left: 100px;">
-			<label for="">add new Task</label>
+		<form action="" class="new-task-container box">
+			<label for="new-task">add new Task</label>
 			<input type="text" id="new-task">
 			<input type="submit" id="addtask" value="Add Task">
-		</form><br>
+		</form>
+		<br>
 
 
 		<div class="todo-list box">
 			<h2>Incomplete Tasks</h2>
-			<ul class="items">
-				<li class="item">1st button</li>
-				<li class="item">2nd button</li>
-				<li id="third" class="item">3d button</li>
+			<ul id="items">
+				<li class="item">
+					<input type="checkbox"><label for="">task name</label>
+				</li>
+				<li class="item">
+					<input type="checkbox"><label for="">task name</label>
+				</li>
+				<li class="item">
+					<input type="checkbox"><label for="">task name</label>
+				</li>
+			</ul>
+		</div> <!--- todo list ---->
+		
+		<div class="complete-list box">
+			<h1>Complete Task</h1>
+			<ul>
+				<li class="item">
+					<label for="">task item</label>
+					<button class="delete">Delete</button>
+				</li>
 			</ul>
 		</div>
 		
-		<ul class="items">
-			<li class="item">4th button</li>
-		</ul><br>
-
-		<div class="maincontent">
-			<script>
-				// typeof
-				var x = 10;
-				var y = 5;
-				var sum = x+y;
-				var mul = x*y;
-				var div = x/y;
-				document.write("sum is: "+ sum +" and product is:" + div);
-			</script>
-		</div>
-
-
-		<div class="footer">
-			<h2>learn with osman</h2>
-		</div>
 	</section>
 
 	<script src="script.js"></script>

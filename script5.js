@@ -1,29 +1,28 @@
 // Listening to Dom Events - play with dom :-
 
-// const headElement = document.querySelector('#head');
+// const headElement = document.querySelector('#header');
 // headElement.addEventListener('click', (osman) => {
-//     console.log(osman);
+//     console.log(osman)
 // });
 
 
-// const headElement = document.querySelector('#head');
+// const headElement = document.querySelector('#header');
 // headElement.addEventListener('dblclick', (event) => {
 //     console.log(event);
 // });
 
-// const headElement = document.querySelector('#head');
+// const headElement = document.querySelector('#header');
 // headElement.addEventListener('mousedown', (example) => {
 //     console.log(example);
 // });
 
+// const headElement = document.querySelector('#header')
+// headElement.addEventListener('mouseup', (event) => {
+//     console.log(event);
+// })
 
-// const headElement = document.querySelector('#head');
-// headElement.addEventListener('mouseup', (example) => {
-//     console.log(example);
-// });
 
-
-// const headElement = document.querySelector('#head');
+// const headElement = document.querySelector('#header');
 // headElement.addEventListener('mousedown', (example) => {
 //     console.log(example);
 // });
@@ -31,7 +30,7 @@
 
 
 // const headElement = document.querySelector('.mouse');
-// headElement.addEventListener('mouseenter', (example) => {
+// headElement.addEventListene('mouseenter', (example) => {
 //     console.log(example);
 // });
 
@@ -54,8 +53,6 @@
 // headElement.addEventListener('mouseout', (event) => {
 //     console.log(event);
 // });
-
-
 
 
 // const headElement = document.querySelector('input[type="text"]');
@@ -107,3 +104,10 @@
 // formElement.addEventListener('submit', (event) => {
 //     console.log(event);
 // });
+
+
+const formElement = document.querySelector('form')
+formElement.addEventListener('submit', (name) => {
+    name.preventDefault();
+    console.log(name.target);
+})
