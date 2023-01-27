@@ -8,7 +8,7 @@
 // console.log(haderElement.textContent);
 // console.log(haderElement.innerText);
 // console.log(haderElement.innerHTML);
-// 
+
 // let headerElement = document.getElementById('header');
 // headerElement.style.fontSize = '70px';
 // headerElement.style.color = 'red';

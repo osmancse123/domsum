@@ -80,6 +80,8 @@
 //     console.log(event);
 // });
 
+
+
 // const headElement = document.querySelector('input[type="text"]');
 // headElement.addEventListener('paste', (event) => {
 //     console.log(event);
@@ -106,8 +108,14 @@
 // });
 
 
-const formElement = document.querySelector('form')
-formElement.addEventListener('submit', (name) => {
-    name.preventDefault();
-    console.log(name.target);
-})
+// const formElement = document.querySelector('form')
+// formElement.addEventListener('submit', (name) => {
+//     name.preventDefault();
+//     console.log(name.target);
+// })
+
+// const formName = document.querySelector('form');
+// formName.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     console.log(e.target);
+// })
